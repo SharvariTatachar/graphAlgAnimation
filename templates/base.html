@@ -1,0 +1,23 @@
+<head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href ="{{url_for('static', filename= 'css/style.css') }}"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Graph Algorithm Visualizer</title>
+    <script src = " {{ url_for('static', filename ='js/main.js')}}" type = "module"></script>
+</head>
+
+<body>
+    
+    <div class = "topnav" id = "myTopNav">
+        <a class = "active" href = "{{ url_for('home') }}">Home</a>
+        <a class = "Reachable DFS" href = "{{ url_for('reachableDFS') }}">Reachable DFS</a>
+        <a class = "Shortest Length Path" href = "{{ url_for('shortestlengthpath') }}">Shortest Length Path</a>
+        <a class = "Dijkstra's Algorithm" href = "{{ url_for('dijkstra') }}">Dijkstra's Algorithm</a>
+        <a href = "javascript:void(0);" class = "icon" onclick = "handleTopNavigation()">
+            <i class = "fa fa-bars"></i>
+        </a> 
+    </div>
+</body>
+{% block content %}
+
+{% endblock %}
