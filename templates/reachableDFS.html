@@ -4,8 +4,11 @@
 {% block content %}
     <!-- loading d3.js here-->
     <script src = "https://d3js.org/d3.v4.js"></script>
+    <script type = "module" src = " {{ url_for('static', filename ='js/dfs.js')}}" type = "module"></script>
     <h1>Reachable DFS</h1>
 
-    <div id = "dfs_visualize"></div>
+    <div id = "dfs_visualize">
+
+    </div>
 
 {% endblock %}
