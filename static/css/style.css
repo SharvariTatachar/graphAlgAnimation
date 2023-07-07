@@ -56,3 +56,8 @@ h1{
         text-align: left; 
     }
 }
+
+#dfs_visualize{
+    align-items: center; 
+    display: grid; 
+}
